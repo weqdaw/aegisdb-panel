@@ -1,0 +1,154 @@
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* --- Sidebar beautify --- */
+.sider {
+  position: relative;
+}
+
+.brand {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 10px;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(0,209,255,0.08) 0%, rgba(107,91,255,0.08) 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.brand-logo {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+
+.brand-title {
+  line-height: 1.1;
+}
+
+.brand-title .name {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.brand-title .sub {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.brand-version {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  color: rgba(255,255,255,0.65);
+  font-size: 12px;
+  background: rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.sider-menu {
+  border-right: 0;
+  padding: 8px 8px 112px 8px; /* 为用户与设置按钮预留空间 */
+}
+
+.sider-menu .ant-menu-item {
+  margin: 4px 0;
+  border-radius: 8px;
+}
+
+.sider-menu .ant-menu-item-selected {
+  background: linear-gradient(90deg, rgba(0,209,255,0.22) 0%, rgba(107,91,255,0.22) 100%) !important;
+}
+
+.sider-settings {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0,0,0,0.25);
+  padding: 8px;
+}
+
+.sider-settings .btn {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.sider-settings .btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* User dropdown block placed above settings */
+.sider-user {
+  position: absolute;
+  bottom: 56px;
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0,0,0,0.2);
+  padding: 8px;
+}
+.sider-user .btn {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+.sider-user .btn:hover {
+  background: rgba(255,255,255,0.1);
+}
