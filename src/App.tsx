@@ -61,7 +61,6 @@ export default function App() {
     { key: '/overview', icon: <AppstoreOutlined />, label: <Link to="/overview">集群概览</Link> },
     { key: '/storage', icon: <HddOutlined />, label: <Link to="/storage">存储监控</Link> },
     { key: '/distributed', icon: <DeploymentUnitOutlined />, label: <Link to="/distributed">分布式管理</Link> },
-    { key: '/network', icon: <ApiOutlined />, label: <Link to="/network">网络与连接</Link> },
     { key: '/biz', icon: <LineChartOutlined />, label: <Link to="/biz">业务统计</Link> },
     { key: '/config', icon: <SettingOutlined />, label: <Link to="/config">配置管理</Link> },
     { key: '/logs', icon: <FileSearchOutlined />, label: <Link to="/logs">日志与审计</Link> },

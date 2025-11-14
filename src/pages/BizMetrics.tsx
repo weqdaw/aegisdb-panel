@@ -146,7 +146,7 @@ export default function BizMetrics() {
         border: '1px solid #e2e8f0',
         background: 'linear-gradient(135deg, rgba(59,130,246,0.08), rgba(16,185,129,0.08))',
       }}>
-        <h3 style={{ margin: 0, color: '#0f172a', fontSize: 20 }}>业务统计概览</h3>
+        <h3 style={{ margin: 0, color: '#0f172a', fontSize: 20 }}>近期业务统计概览</h3>
         <p style={{ margin: '4px 0 16px', fontSize: 13, color: '#475569' }}>
           实时洞察核心 KV 操作与多层存储状态。
         </p>
