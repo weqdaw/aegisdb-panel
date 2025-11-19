@@ -389,7 +389,7 @@ export default function StorageMetrics() {
             <div>
               <div style={{ fontSize: 12, color: '#64748b', marginBottom: 6 }}>各 Store 容量与利用率</div>
               <div style={{ display: 'flex', width: '100%', height: 18, borderRadius: 10, overflow: 'hidden', background: '#f5f7fb' }}>
-                {clusterView.perStore.map((s, idx) => {
+                {clusterView.perStore.map((s) => {
                   const widthPct = clusterView.totalCapacity > 0 ? (s.capacity / clusterView.totalCapacity) * 100 : 0;
                   const color = s.util < 0.6 ? '#3b82f6' : s.util < 0.8 ? '#f59e0b' : '#ef4444';
                   return (

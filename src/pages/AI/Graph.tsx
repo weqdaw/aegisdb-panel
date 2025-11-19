@@ -135,14 +135,14 @@ const controlGrid: React.CSSProperties = {
   gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
 };
 
-const chipStyle: React.CSSProperties = {
-  padding: "8px 12px",
-  borderRadius: 999,
-  background: "rgba(59, 130, 246, 0.12)",
-  color: "#1d4ed8",
-  fontSize: 13,
-  fontWeight: 600,
-};
+// const chipStyle: React.CSSProperties = {
+//   padding: "8px 12px",
+//   borderRadius: 999,
+//   background: "rgba(59, 130, 246, 0.12)",
+//   color: "#1d4ed8",
+//   fontSize: 13,
+//   fontWeight: 600,
+// };
 
 const labelStyle: React.CSSProperties = {
   fontSize: 13,
@@ -1169,12 +1169,8 @@ export default function Graph() {
     <div style={containerStyle}>
       <header style={headerStyle}>
         <div>
-          <div style={chipStyle}>语义向量分析实验室</div>
-          <h1 style={{ margin: "12px 0 0", fontSize: 32, color: "#0f172a" }}>金融语义索引图谱</h1>
-          <p style={{ margin: "8px 0 0", color: "#475569", maxWidth: 720, lineHeight: 1.6 }}>
-            该图谱展示 300 个与金融市场相关的语义向量节点，涵盖宏观、固收、外汇、风控等场景。
-            支持多聚类算法、语义主成分缩放，以及向量数据导出，用于构建语义检索与索引体系。
-          </p>
+        
+          <h1 style={{ margin: "12px 0 0", fontSize: 32, color: "#0f172a" }}>语义索引图谱</h1>
         </div>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
           <button

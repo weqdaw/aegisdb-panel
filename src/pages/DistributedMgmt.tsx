@@ -179,7 +179,7 @@ export default function DistributedMgmt() {
   const loadBalanceStates = useMemo<LoadBalanceState[]>(() => {
     const totalRequests = 10000;
     const avgPerNode = totalRequests / 10;
-    return nodes.map((node, idx) => {
+    return nodes.map((node) => {
       const variance = 0.15; // 15% 方差
       const requestCount = Math.floor(avgPerNode * (1 + (seededRand(node.id, 8) - 0.5) * variance * 2));
       const latency = Math.floor(3 + seededRand(node.id, 9) * 7); // 3-10ms
@@ -291,7 +291,7 @@ export default function DistributedMgmt() {
   }, [nodes]);
 
   const connectionStats = useMemo<ConnectionStats[]>(() => {
-    return nodes.map((node, idx) => {
+    return nodes.map((node) => {
       const active = Math.floor(50 + seededRand(node.id, 26) * 150); // 50-200
       const total = Math.floor(active * (1.2 + seededRand(node.id, 27) * 0.3)); // 总连接数略高于活跃
       const sent = Math.floor((100 + seededRand(node.id, 28) * 400) * 1024 * 1024); // 100-500 MB

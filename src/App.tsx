@@ -5,12 +5,9 @@ import { Layout, Menu, Dropdown } from 'antd';
 import { Routes, Route, Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import {
   AppstoreOutlined,
-  ClusterOutlined,
   HddOutlined,
   DeploymentUnitOutlined,
-  ApiOutlined,
   LineChartOutlined,
-  AlertOutlined,
   SettingOutlined,
   FileSearchOutlined,
   RobotOutlined,
